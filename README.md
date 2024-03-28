@@ -51,11 +51,11 @@ The typical architecture of an Inception module includes:
 The outputs of all branches are concatenated along the channel dimension, forming the final output of the Inception module.
 The output of an Inception module can be represented mathematically as:
 
-\[ \text{output} = \text{concatenate}(\text{branch}_1, \text{branch}_2, \text{branch}_3, \text{branch}_4) \]
+output = concatenate(branch_1, branch_2, branch_3, branch_4)
 
 Where:
-- \( \text{branch}_i \) represents the output of the \( i \)-th convolutional branch.
-- \( \text{concatenate} \) denotes the operation of concatenating tensors along the channel dimension.
+- branch_i represents the output of the i-th convolutional branch.
+- concatenate() denotes the operation of concatenating tensors along the channel dimension.
 
 
 ### Residual Block
@@ -71,11 +71,11 @@ The typical architecture of a Residual block includes:
 The output of the convolutional layers is added to the input feature maps, and the resulting sum forms the output of the Residual block.
 The output of a Residual block can be represented mathematically as:
 
-\[ \text{output} = \text{conv\_layers}(\text{input}) + \text{input} \]
+output = conv\_layers(input) + input
 
 Where:
-- \( \text{conv\_layers} \) represents the convolutional layers within the block.
-- \( \text{input} \) denotes the input tensor to the block.
+- conv\_layers() represents the convolutional layers within the block.
+- input denotes the input tensor to the block.
 
 
 ### Applications
@@ -90,9 +90,9 @@ The Inception ResNet V2 model has a wide range of applications across various do
 
 The project contains the following files:
 
-1. *Binary_Image_Classifier.ipynb*: This file contains the TensorFlow implementation of the Inception ResNet V2 model with pre-trained weights for image classification. The Colab file for trained model can accessed [here](https://colab.research.google.com/drive/1ajVqBvHMBKsnVrHXw6Lx-3z0ApOU0mc8?usp=sharing#scrollTo=5brc0ettJBeH) and it's benchmark can be accessed [here](https://colab.research.google.com/drive/1__ov9MgOs4XaUcBo7BFnn1N4Rw36cRLD?usp=sharing#scrollTo=ke_3H3m9-DnK).
-2. *keras_to_TFLite_Model.ipynb*: This file includes the script to convert the trained Keras model to TensorFlow Lite model.The tensorflow to tensorflow lite conversion can be accessed [here](https://colab.research.google.com/drive/1ijX0LAlUB5m2qAvWhXXqglYpbqftOnff?usp=sharing).
-3. *Test_BinaryClassifier_TFLite.ipynb*: This file contains the TensorFlow Lite model generated after conversion.The implementation of the TFLite model and it's benchmark can be accessed [here](https://colab.research.google.com/drive/1P3G9qLZ8PJUeZJeGsG4N92lsId_cKciE?usp=sharing).
+1. *Binary_Image_Classifier.ipynb*: This file contains the TensorFlow implementation of the Inception ResNet V2 model with pre-trained weights for image classification. The Colab file for trained model can accessed [here](https://colab.research.google.com/drive/1uQ2jLd_dAKTrIZx5Zz83BOJYwaKwBR8m?usp=sharing) and it's benchmark can be accessed [here](https://colab.research.google.com/drive/1r2M8dVf0uR8kX7IJA_PYg6W3m2MOsTXm?usp=sharing).
+2. *keras_to_TFLite_Model.ipynb*: This file includes the script to convert the trained Keras model to TensorFlow Lite model.The tensorflow to tensorflow lite conversion can be accessed [here](https://colab.research.google.com/drive/18bS2vlBIqo0N1TCAyK_im1cS6eqb9i9B?usp=sharing).
+3. *Test_BinaryClassifier_TFLite.ipynb*: This file contains the TensorFlow Lite model generated after conversion.The implementation of the TFLite model and it's benchmark can be accessed [here](https://colab.research.google.com/drive/1fD9aWJww2qKz5sGq5cyoFHXgM1HSbCL7?usp=sharing).
 
 
 ## Dependencies
